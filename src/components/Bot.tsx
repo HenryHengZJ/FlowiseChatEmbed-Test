@@ -31,7 +31,7 @@ export type BotProps = {
     fontSize?: number
 }
 
-const defaultWelcomeMessage = 'Hi there! How can I help?'
+const defaultWelcomeMessage = '안녕하십니까? 무엇을 도와드릴까요?'
 
 /*const sourceDocuments = [
     {
@@ -334,7 +334,6 @@ export const Bot = (props: BotProps & { class?: string }) => {
                         onSubmit={handleSubmit}
                     />
                 </div>
-                <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
                 <BottomSpacer ref={bottomSpacer} />
             </div>
             {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)}/>}
